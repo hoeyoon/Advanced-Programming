@@ -2,7 +2,7 @@
 
 int main(){
   int n1, n2, n3;
-  puts("3개의 정숫값을 입력하세요.");
+  puts("3개의 정수값을 입력하세요.");
   printf("정수 1 : "); 
   scanf("%d", &n1);
 
