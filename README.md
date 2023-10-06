@@ -20,5 +20,5 @@
 + 6주차 문제 ✅️
   + [<1>](https://github.com/hoeyoon/Advanced-Programming/blob/master/6%20week/N1.cpp)[<2>](https://github.com/hoeyoon/Advanced-Programming/blob/master/6%20week/N2.cpp)[<3>](https://github.com/hoeyoon/Advanced-Programming/blob/master/6%20week/N3.cpp)[<4>](https://github.com/hoeyoon/Advanced-Programming/blob/master/6%20week/N4.cpp)
 
-+ 7주차 문제 하는 중...
++ 7주차 문제 ✅️
   + [<1>](https://github.com/hoeyoon/Advanced-Programming/blob/master/7%20week/N1.cpp)[<2>](https://github.com/hoeyoon/Advanced-Programming/blob/master/7%20week/N2.cpp)[<3>](https://github.com/hoeyoon/Advanced-Programming/blob/master/7%20week/N3.cpp)[<4>](https://github.com/hoeyoon/Advanced-Programming/blob/master/7%20week/N4.cpp)
