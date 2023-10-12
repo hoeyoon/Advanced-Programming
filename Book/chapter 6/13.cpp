@@ -20,12 +20,12 @@ int main(){
   int n;
   printf("찾을 값 : ");
   scanf("%d", &n);
-
-  if(searchr(vx, n, NUMBER) == FAILED){
+  int idx;
+  if((idx = searchr(vx, n, NUMBER)) == FAILED){
     printf("\a탐색에 실패했습니다.\n");
   }
   else{
-    printf("%d은(는) %d번째에 있습니다.\n", n, searchr(vx, n, NUMBER) + 1);
+    printf("%d은(는) %d번째에 있습니다.\n", n, idx + 1);
   }
   return 0;
 }
