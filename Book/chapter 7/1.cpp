@@ -9,6 +9,6 @@ int main(){
 
 	printf("unsigned short int   : %u~%u\n", 0, USHRT_MAX);
 	printf("unsinged int         : %u~%u\n", 0, UINT_MAX);
-	printf("unsigned logn int    : %u~%u\n", 0, ULONG_MAX);
+	printf("unsigned long int    : %u~%u\n", 0, ULONG_MAX);
 	return 0;
 }
