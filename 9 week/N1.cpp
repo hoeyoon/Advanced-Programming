@@ -32,3 +32,24 @@ int main(){
   }
   return 0;
 }
+
+// 또는
+
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+  char str[10][128];
+  int count = 0;
+  for(int i = 0; i < 10; i++){
+    scanf("%s", str[i]);
+    if(strstr(str[i], "$END$")){
+      break;
+    }
+    count++;
+  }
+  for(int i = 0; i < count; i++){
+    printf("%s\n", str[i]);
+  }
+  return 0;
+}
