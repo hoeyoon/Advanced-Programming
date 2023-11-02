@@ -25,7 +25,7 @@ int main(){
   char str[128];
   for(int i = 0; i < 10; i++){
     scanf("%s", str);
-    if(strstr(str, "$END$")){
+    if(strcmp(str, "$END$") == 0){
       break;
     }
     printf("%s\n", str);
@@ -43,7 +43,7 @@ int main(){
   int count = 0;
   for(int i = 0; i < 10; i++){
     scanf("%s", str[i]);
-    if(strstr(str[i], "$END$")){
+    if(strcmp(str[i], "$END$") == 0){
       break;
     }
     count++;
