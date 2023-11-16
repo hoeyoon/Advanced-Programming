@@ -29,27 +29,31 @@ NO.
 */
 
 #include <stdio.h>
-#include <string.h>
 
-void check_str(char* str, char ch){
-  while(*str != ch){
-    str++;
-  }
-  *(str + 1) = '\0';
+char *str_check(char *str, char ch){
+	int count = 0;
+	while(*str != '\0'){
+		if(*str == ch){
+			*(str + 1) = '\0';
+			return str - count;
+		}
+		count++;
+		str++;
+	}
+	return NULL;
 }
 
 int main(){
-  char str[100], ch;
-  scanf("%s", str);
-  
-  scanf(" %c", &ch);
-
-  if(strchr(str, ch) == NULL){
-    printf("NO.\n");
-  }
-  else{
-    check_str(str, ch);
-    printf("이전문자는 %s입니다.\n", str);
-  }
-  return 0;
+	char str[101];
+	char ch;
+	scanf("%s", str);
+	scanf(" %c", &ch);
+	char *p;
+	if((p = str_check(str, ch)) == NULL){
+		printf("NO.");
+	}
+	else{
+		printf("이전문자는 %s입니다.", p);
+	}
+	return 0;
 }
