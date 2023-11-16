@@ -23,22 +23,23 @@ suDGM
 */
 
 #include <stdio.h>
-#include <string.h>
 
-void print_str(char *str){
+void del_str(char *s){
   int i = 0;
-  while(*str != '\0'){
+  int idx = 0;
+  while(*(s + i) != '\0'){
     if(i % 2 == 0){
-      printf("%c", *str);
+      s[idx++] = s[i];
     }
     i++;
-    str++;
   }
+  s[idx] = '\0';
 }
 
 int main(){
-  char str[100];
+  char str[101];
   scanf("%[^\n]s", str);
-  print_str(str);
+  del_str(str);
+  printf("%s\n", str);
   return 0;
 }
