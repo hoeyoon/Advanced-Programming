@@ -31,14 +31,13 @@ NO.
 #include <stdio.h>
 
 char *str_check(char *str, char ch){
-	int count = 0;
-	while(*str != '\0'){
-		if(*str == ch){
-			*(str + 1) = '\0';
-			return str - count;
+	char *p = str;
+	while(*p != '\0'){
+		if(*p == ch){
+			*(p + 1) = '\0';
+			return str;
 		}
-		count++;
-		str++;
+		p++;
 	}
 	return NULL;
 }
