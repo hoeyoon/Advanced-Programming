@@ -25,21 +25,24 @@ suDGM
 #include <stdio.h>
 
 void del_str(char *s){
-  int i = 0;
-  int idx = 0;
-  while(*(s + i) != '\0'){
-    if(i % 2 == 0){
-      s[idx++] = s[i];
-    }
-    i++;
-  }
-  s[idx] = '\0';
+	char *p = s;
+	int i = 0;
+	while(s[i] != '\0'){
+		if(i % 2 == 0){
+			*p = s[i];
+			p++;
+		}
+		i++;
+	}
+	*p = '\0';
 }
 
 int main(){
-  char str[101];
-  scanf("%[^\n]s", str);
-  del_str(str);
-  printf("%s\n", str);
-  return 0;
+	char str[128];
+
+	scanf("%[^\n]s", str);
+	del_str(str);
+	printf("%s\n", str);
+	return 0;
 }
+
